@@ -1,6 +1,6 @@
 package com.clubmanagement.app.service.coach;
 
-import com.clubmanagement.app.repository.coach.Coach;
+import com.clubmanagement.app.entity.Coach;
 
 import java.util.List;
 

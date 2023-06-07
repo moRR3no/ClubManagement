@@ -1,7 +1,7 @@
 package com.clubmanagement.app.service.coach;
 
-import com.clubmanagement.app.repository.coach.Coach;
-import com.clubmanagement.app.repository.coach.CoachRepository;
+import com.clubmanagement.app.entity.Coach;
+import com.clubmanagement.app.repository.CoachRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

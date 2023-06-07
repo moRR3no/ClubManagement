@@ -1,7 +1,7 @@
 package com.clubmanagement.app.service.player;
 
-import com.clubmanagement.app.repository.player.Player;
-import com.clubmanagement.app.repository.player.PlayerRepository;
+import com.clubmanagement.app.entity.Player;
+import com.clubmanagement.app.repository.PlayerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

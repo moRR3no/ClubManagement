@@ -1,6 +1,6 @@
 package com.clubmanagement.app.controller;
 
-import com.clubmanagement.app.repository.coach.Coach;
+import com.clubmanagement.app.entity.Coach;
 import com.clubmanagement.app.service.coach.CoachService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

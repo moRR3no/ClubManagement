@@ -1,7 +1,7 @@
 package com.clubmanagement.app.service.competition;
 
-import com.clubmanagement.app.repository.competition.Competition;
-import com.clubmanagement.app.repository.competition.CompetitionRepository;
+import com.clubmanagement.app.entity.Competition;
+import com.clubmanagement.app.repository.CompetitionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

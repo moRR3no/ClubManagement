@@ -1,6 +1,6 @@
 package com.clubmanagement.app.controller;
 
-import com.clubmanagement.app.repository.player.Player;
+import com.clubmanagement.app.entity.Player;
 import com.clubmanagement.app.service.player.PlayerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

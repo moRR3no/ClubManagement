@@ -1,6 +1,6 @@
 package com.clubmanagement.app.service.player;
 
-import com.clubmanagement.app.repository.player.Player;
+import com.clubmanagement.app.entity.Player;
 
 import java.util.List;
 

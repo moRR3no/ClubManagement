@@ -1,6 +1,6 @@
 package com.clubmanagement.app.service.club;
 
-import com.clubmanagement.app.repository.club.Club;
+import com.clubmanagement.app.entity.Club;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.clubmanagement.app.repository.coach;
+package com.clubmanagement.app.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;

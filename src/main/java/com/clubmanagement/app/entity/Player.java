@@ -1,4 +1,4 @@
-package com.clubmanagement.app.repository.player;
+package com.clubmanagement.app.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -23,4 +23,15 @@ public class Player {
 
     @Column(name = "number")
     private int number;
+
+    public Player(String name, int number) {
+        this.name = name;
+        this.number = number;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "club_id")
+    private Club club;
+
+
 }

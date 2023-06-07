@@ -1,6 +1,6 @@
 package com.clubmanagement.app.controller;
 
-import com.clubmanagement.app.repository.competition.Competition;
+import com.clubmanagement.app.entity.Competition;
 import com.clubmanagement.app.service.competition.CompetitionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

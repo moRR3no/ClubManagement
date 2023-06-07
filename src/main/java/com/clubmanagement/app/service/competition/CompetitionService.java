@@ -1,6 +1,6 @@
 package com.clubmanagement.app.service.competition;
 
-import com.clubmanagement.app.repository.competition.Competition;
+import com.clubmanagement.app.entity.Competition;
 
 import java.util.List;
 
