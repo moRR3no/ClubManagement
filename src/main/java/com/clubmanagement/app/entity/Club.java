@@ -1,18 +1,17 @@
 package com.clubmanagement.app.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
-
-import java.util.HashSet;
-import java.util.Set;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 @Entity
-@Table(name = "club")
+@Table(name = "clubs")
 @NoArgsConstructor
 @Getter
 @Setter
 @ToString
-@AllArgsConstructor
 public class Club {
 
     @Id
@@ -26,8 +25,8 @@ public class Club {
         this.name = name;
     }
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "club", cascade = CascadeType.ALL)
-    private Set<Player> players = new HashSet<>();
-
+    //mappedBy points a field in a child class to connect with; also this annotation suggests there is a bidirectional mapping
+    // in this case: in Player class there is a field club of type Club (Club club)
+//    @OneToMany(fetch = FetchType.EAGER, mappedBy = "club", cascade = CascadeType.ALL)
 
 }

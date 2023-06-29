@@ -7,11 +7,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 ;
 
 @Service
-public class PlayerServiceImpl implements PlayerService{
+public class PlayerServiceImpl implements PlayerService {
     private final PlayerRepository playerRepository;
 
     @Autowired
@@ -28,10 +29,9 @@ public class PlayerServiceImpl implements PlayerService{
     public Player findById(Long id) {
         Optional<Player> result = playerRepository.findById(id);
         Player thePlayer = null;
-        if(result.isPresent()) {
-            thePlayer =result.get();
-        }
-        else {
+        if (result.isPresent()) {
+            thePlayer = result.get();
+        } else {
             throw new RuntimeException("Did not found player id - " + id);
         }
         return thePlayer;
@@ -45,5 +45,12 @@ public class PlayerServiceImpl implements PlayerService{
     @Override
     public void deleteById(Long id) {
         playerRepository.deleteById(id);
+    }
+
+    @Override
+    public void savePlayers(Set<Player> players) {
+        for (Player p : players) {
+            save(p);
+        }
     }
 }

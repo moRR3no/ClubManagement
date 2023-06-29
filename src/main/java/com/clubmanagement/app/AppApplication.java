@@ -11,6 +11,7 @@ public class AppApplication {
 	}
 
 
+
 	/**
 	 * Probably better way to insert data is doing it thorugh Postman in JSON Body
 	 */
@@ -21,22 +22,25 @@ public class AppApplication {
 //	}
 //
 //	private void createPlayerClub(ClubService clubService, PlayerService playerService) {
-//		Club realMadrid = new Club("Real Madrid");
-//		Player player20 = new Player("Vinicius Jr" , 20);
-//		Player player10 = new Player("Luka Modric" , 10);
-//		Player player9 = new Player("Karim Benzema" , 9);
-//		Player player1 = new Player("Thibaut Courtois" , 1);
 //
+//
+//
+//		Set<Player> players = new HashSet<>();
+//		players.add(new Player("Vinicius Jr", 11));
+//		players.add(new Player("Modrić", 10));
+//		players.add(new Player("Kroos", 8));
+//		players.add(new Player("Rodrygo", 7));
+//		players.add(new Player("Courtois", 1));
+//		Club realMadrid = new Club("Real Madrid");
+//		realMadrid.setPlayers(players);
+//
+//		playerService.savePlayers(players);
 //		clubService.save(realMadrid);
 //
-//		player1.setClub(realMadrid);
-//		player10.setClub(realMadrid);
-//		player9.setClub(realMadrid);
-//		player20.setClub(realMadrid);
+////
 //
-//		playerService.save(player20);
-//		playerService.save(player1);
-//		playerService.save(player9);
-//		playerService.save(player10);
+////		realMadrid.setPlayers(players);
+////		clubService.save(realMadrid);
+//
 //	}
 }

@@ -1,0 +1,1 @@
+INSERT IGNORE INTO clubs (id, name) values (1, 'Free Agent');
